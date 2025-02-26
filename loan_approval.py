@@ -70,7 +70,7 @@ def user_input_features():
     inputs = {}
     for col in x.columns:
         if df[col].dtype == 'object' or df[col].dtype == 'category':
-            inputs[col] = st.sidebar.number_input(col, min_value=0)
+            inputs[col] = st.sidebar.number_input(col, min_value=0.0)
         else:
             inputs[col] = st.sidebar.number_input(col, value=0)
     return pd.DataFrame(inputs, index=[0])
