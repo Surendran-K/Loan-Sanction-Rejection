@@ -52,7 +52,7 @@ for name, model in models.items():
     model.fit(x_train_sc, y_train)
 
 # Streamlit interface
-st.title('Loan Status Prediction Model Comparison')
+st.title('Loan Approval / Rejection Model')
 
 # User input form with instructions
 st.sidebar.header('User Input Features')
